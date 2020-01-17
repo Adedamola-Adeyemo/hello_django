@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>hello, Django</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'hello/site.css'%}" />
+    </head>
+    <body>
+        <span class= "message">hello there,{{name}}!</span>it's{{date | date:"1, d F, Y"}} at {{ date | time:"H:i:s" }}
+    </body>
+</html>
